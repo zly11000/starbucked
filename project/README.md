@@ -13,58 +13,62 @@ vue + vuex + vue-router + webpack + ES6 + sass + flex + axios
 ### 目录结构
    project
      
-     | --- build               //webpack配置项
-     | --- config              //项目打包路径
+     | --- build                         //webpack配置项
+     |
+     |
+     | --- config                        //项目打包路径
+     |
+     |
      | --- dist
      |       |-static 
-     |           |-css         //css样式
-     |           |-fonts       //iconfont图标
-     |           |-img         //图片
-     |           |-js          //打包的js文件
+     |           |-css                      //css样式
+     |           |-fonts                    //iconfont图标
+     |           |-img                      //图片
+     |           |-js                       //打包的js文件
      |
      | ---api
-     |     |-index.js          // 请求的接口地址
+     |     |-index.js                       // 请求的接口地址
      |
-     | ---components            //组件
+     | ---components                        //组件
      |      |-submit
-     |           |-index.vue     //弹出框组件
-     |      |-dialog.vue         //蒙层组件
-     |      |-header.vue         //头部公共组件
+     |           |-index.vue               //弹出框组件
+     |      |-dialog.vue                   //蒙层组件
+     |      |-header.vue                  //头部公共组件
      |
      | --- router
-     |       |-index.js          //路由的配置
+     |       |-index.js                    //路由的配置
      |
-     | ---static                 //静态文件
+     | ---static                          //静态文件
      |       |-fonts
      |       |-style
      |           |--_minin.scss
      |           |--common.scss
      |       |-flexble.js
      |
-     | ---store                    //仓库异步加载
-     |       |-modules             //store模块
-     |            |-user.js        //查询用户是否登陆
-     |       |-index.js            //引用vuex,创建store
+     | ---store                       //仓库异步加载
+     |       |-modules                //store模块
+     |            |-user.js           //查询用户是否登陆
+     |       |-index.js               //引用vuex,创建store
      |
-     | ---utils                    //工具类文件夹
-     |       |-isfile.js           //判断上传的是不是图片和图片的大小
-     |       |-request.js            //对axios进行进一步的封装
+     | ---utils                       //工具类文件夹
+     |       |-isfile.js              //判断上传的是不是图片和图片的大小
+     |       |-request.js               //对axios进行进一步的封装
      |
-     | ---views                         //所有的视图文件
-     |       |-index                     //首页
-     |           |-components              //首页的组件        
-     |                 |-list.vue          //渲染首页的加班与休假
-     |                 |-table.vue         //首页切换加班与休假的数据
-     |                 |-index.vue         //首页
-     |       |-commit.vue              //办公室加班或休假申请表
-     |       |-detail.vue              //加班或休假详情页
-     |       |-history.vue            //历史页
-     |       |-logo.vue               //登录页
-     |       |-search.vue             //搜索页
+     | ---views                            //所有的视图文件
+     |       |-index                        //首页
+     |           |-components                 //首页的组件        
+     |                 |-list.vue             //渲染首页的加班与休假
+     |                 |-table.vue            //首页切换加班与休假的数据
+     |                 |-index.vue            //首页
+     |       |-commit.vue                 //办公室加班或休假申请表
+     |       |-detail.vue                 //加班或休假详情页
+     |       |-history.vue               //历史页
+     |       |-logo.vue                  //登录页
+     |       |-search.vue                //搜索页
      |
-     | --- App.vue       //页面入口文件
+     | --- App.vue          //页面入口文件
      |
-     | --- main.js       //入口文件,加载公共组件
+     | --- main.js          //入口文件,加载公共组件
      |
      |
 
