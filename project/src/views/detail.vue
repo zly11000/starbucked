@@ -18,7 +18,7 @@
       <div class="bottom">
           <div class="bottom-top" >
              <ul>
-                  <h4>申请详情</h4>
+                  <h4><span>申请详情</span></h4>
                   <li><span>加班日期</span><span>{{this.detailList.create_at.slice(0,10)}}</span></li>
                   <li><span>加班类型</span><span>{{types}}</span></li>
                   <li><span>加班起始时间</span><span>{{this.detailList.startTime.slice(this.detailList.startTime.indexOf("T")+1,this.detailList.startTime.indexOf("."))}}</span></li>
@@ -28,7 +28,7 @@
           </div>
            <div class="bottom-center" >
              <ul>
-                  <h4>加班理由</h4>
+                  <h4><span>加班理由</span></h4>
                   <li>{{detailList.describes}}</li>
               </ul>
           </div>
@@ -146,20 +146,20 @@ export default {
         dt{
             width: 70px;
             height: 70px;
-             padding-top:pxTorem(11px);
-            padding-left:pxTorem(15px);
+              padding-top:pxTorem(11px);
+             padding-left:pxTorem(15px);
         }
        dd{
            p{
-            padding-top:pxTorem(11px);
-            padding-left:pxTorem(30px);
+             padding-top:pxTorem(11px);
+             padding-left:pxTorem(30px);
             width: 100%;
            }
            .first{
-               padding-right:pxTorem(40px)
+                padding-right:pxTorem(40px)
            }
            span{
-                padding-right:pxTorem(50px);
+                 padding-right:pxTorem(50px);
            }
        }
     }
@@ -170,17 +170,14 @@ export default {
       width:90%;
       height:100%;
       z-index:999;
-      margin-left:5%;
+       margin-left:5%;
        margin-top:-8%;
      
        &::-webkit-scrollbar{
            display: none;
        }
       .bottom-top{
-           
             z-index:999;
-        //   width:90%;
-        //   margin-left:5%;
           border-radius:6px;
           min-height:pxTorem(228px);
           background: #fff;
@@ -190,16 +187,19 @@ export default {
                border-bottom: 1px solid #f5f5f5;
                display: flex;
                align-items: center;
+               span{
                padding-left:15px;
+               }
+           
           }
           ul{
               li{
-                //   padding-left:15px; 
+              
                   padding-top:20px;
                   display: flex;
                   justify-content: space-between;
                   span:nth-child(1){
-                      padding-left:15px;  
+                     padding-left:15px;  
                   }
                    span:nth-child(2){
                       padding-right:15px;  
@@ -218,11 +218,15 @@ export default {
                border-bottom: 1px solid #eee;
                display: flex;
                align-items: center;
-               padding-left:15px;  
+               span{
+                  padding-left:15px;
+               }
+             
           }
           li{
                padding-left:15px;  
                padding-top:10px;
+               overflow: hidden;
           }
       }
       .bottom-bottom{
@@ -237,7 +241,7 @@ export default {
                     width: 200px;
                     height:100%;
                     float: left;
-                     padding:5px 2px;
+                      padding:5px 2px;
                 }
                 img{
                     width: 200px;
